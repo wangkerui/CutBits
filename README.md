@@ -18,6 +18,5 @@ Usage/用法
 
 <code>
 gcc -o cutbits main.c
-
 ./cutbits <HEX_STRING> ### <HEX_STRING>是二进制位的十六进制表示，如5A4B3C2D1E9F7D4C。
 </code>
