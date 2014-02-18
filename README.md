@@ -1,7 +1,7 @@
 CutBits
 =======
 
-Split hundreds of binary bits into integers by specific size.
+Split hundreds of binary bits into integers with specific bit width.
 
 把一长串二进制位按照特定的位数分组，并转换为整数。
 
@@ -25,7 +25,7 @@ HEX_STRING是二进制位的十六进制表示，如DFBAC841A5B6C6E9587ABB732369
 ###Example/示例
 
 输入
-<pre>DFBAC841A5B6C6E9587ABB7323696BCBEE017B0EA4B184DADD89E756</pre>
+<pre>$> ./cutbits DFBAC841A5B6C6E9587ABB7323696BCBEE017B0EA4B184DADD89E756</pre>
 （224位）
 
 输出<pre>
