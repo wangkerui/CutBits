@@ -1,43 +1,32 @@
 CutBits
 =======
 
-Split hundreds of binary bits into integers with specific bit width.
+Split hundreds of binary bits into integers with specific bit width. (把一长串二进制位按照特定的位数分组，并转换为整数。)
 
-把一长串二进制位按照特定的位数分组，并转换为整数。
+本项目是为了帮助朋友批量处理一些二进制位（十六进制形式的字符表示）。待处理的数据包括160位版本和224位版本，160位要求每24位分割成一个整数，224位要求每23位分隔成一个整数，并分别按照两种格式输出。格式参考<code>data/output_160_1.txt</code>和<code>data/output_160_2.txt</code>。
 
-###Input/输入
+###文件（夹）说明
 
-十六进制字符表示的二进制位，或160位，或224位。
+data: 输入文件和输出文件示例
 
-###Output/输出
+  -input_160.txt: 160位，按照24位分割
 
-或23位或24位一组的整数列表。输出十六进制格式的整数。
+  -input_224.txt: 224位，按照23位分割
+
+  -output*: 输出文件
+
+rls:  可执行文件
+
+  -CutBits_24_160_format1.ext: 输入160位文件，输出格式1
+
+  -CutBits_24_160_format2.ext: 输入160位文件，输出格式2
+
+  -CutBits_23_224_format1.ext: 输入224位文件，输出格式1
+
+  -CutBits_23_224_format2.ext: 输入224位文件，输出格式2
+
+*.h, *.c: 源文件
 
 ###Usage/用法
 
-<pre>
-$> gcc -o cutbits main.c
-$> ./cutbits HEX_STRING
-</pre>
-
-HEX_STRING是二进制位的十六进制表示，如DFBAC841A5B6C6E9587ABB7323696BCBEE017B0EA4B184DADD89E756。
-
-###Example/示例
-
-输入
-<pre>$> ./cutbits DFBAC841A5B6C6E9587ABB7323696BCBEE017B0EA4B184DADD89E756</pre>
-（224位）
-
-输出<pre>
-9e756
-9b5bb
-3a92c6
-700bd8
-16bcbe
-6e646d
-561eae
-5b6374
-4841a5
-1bf75
-</pre>
-（23位一组）
+示例：CutBits_24_160_format2.ext <input_160.txt >output_160_2.txt
