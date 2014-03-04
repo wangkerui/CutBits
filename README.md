@@ -9,21 +9,21 @@ Split hundreds of binary bits into integers with specific bit width. (把一长�
 
 data: 输入文件和输出文件示例
 
-  -input_160.txt: 160位，按照24位分割
+&nbsp;&nbsp;-input_160.txt: 160位，按照24位分割
 
-  -input_224.txt: 224位，按照23位分割
+&nbsp;&nbsp;-input_224.txt: 224位，按照23位分割
 
-  -output*: 输出文件
+&nbsp;&nbsp;-output*: 输出文件
 
 rls:  可执行文件
 
-  -CutBits_24_160_format1.ext: 输入160位文件，输出格式1
+&nbsp;&nbsp;-CutBits_24_160_format1.exe: 输入160位文件，输出格式1
 
-  -CutBits_24_160_format2.ext: 输入160位文件，输出格式2
+&nbsp;&nbsp;-CutBits_24_160_format2.exe: 输入160位文件，输出格式2
 
-  -CutBits_23_224_format1.ext: 输入224位文件，输出格式1
+&nbsp;&nbsp;-CutBits_23_224_format1.exe: 输入224位文件，输出格式1
 
-  -CutBits_23_224_format2.ext: 输入224位文件，输出格式2
+&nbsp;&nbsp;-CutBits_23_224_format2.exe: 输入224位文件，输出格式2
 
 *.h, *.c: 源文件
 
